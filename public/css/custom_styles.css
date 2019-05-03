@@ -1,0 +1,17 @@
+div.card-header > ul.nav.nav-pills.card-header-pills > li.nav-item > a.nav-link.active {
+     background-color: #353A3F;
+     color: #FFFFFF
+ }
+
+div.card-header > ul.nav.nav-pills.card-header-pills > li.nav-item > a.nav-link {
+    color: #212529;
+}
+
+span#logout:hover {
+    cursor: pointer;
+    color: #CCCECF;
+}
+
+i#eye:hover {
+    cursor: pointer;
+}
