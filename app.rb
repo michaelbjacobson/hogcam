@@ -5,8 +5,6 @@ require 'thin'
 require 'rack/ssl-enforcer'
 require 'logger'
 require 'json'
-require_relative './lib/aws'
-require_relative './lib/raspberry_pi'
 require_relative './lib/weather'
 
 # App
@@ -39,40 +37,12 @@ class App < Sinatra::Base
     redirect '/login' unless authenticated?
   end
 
-  before '/raspi/*' do
-    redirect '/' unless request.xhr?
-  end
-
   get '/' do
     erb :home
   end
 
   get '/login' do
     erb :login
-  end
-
-  get '/raspi/status' do
-    RaspberryPi.status.to_json
-  end
-
-  get '/raspi/timelapse_active' do
-    RaspberryPi.timelapse_active?.to_s
-  end
-
-  get '/raspi/preview' do
-    AWS.preview_url
-  end
-
-  post '/raspi/reboot' do
-    RaspberryPi.reboot
-  end
-
-  post '/raspi/toggle_timelapse' do
-    RaspberryPi.timelapse_active? ? RaspberryPi.stop_timelapse : RaspberryPi.start_timelapse
-  end
-
-  post '/raspi/update_preview' do
-    RaspberryPi.update_preview unless RaspberryPi.timelapse_active?
   end
 
   post '/authenticate' do

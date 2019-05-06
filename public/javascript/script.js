@@ -1,11 +1,12 @@
 $( document ).ready(function() {
+    let apiRoot = 'https://hogcam-api.eu.ngrok.io';
     let $spinner = $('span#image_loading');
     let $timelapseControlButton = $('button#toggle_timelapse');
     let $rebootButton = $('button#reboot');
     let $refreshPreviewButton = $('button#refresh_preview');
 
     $rebootButton.on('click', function() {
-        $.post('/raspi/reboot')
+        $.post(apiRoot + '/reboot')
     });
 
     $('span#logout').on('click', function() {
@@ -26,7 +27,7 @@ $( document ).ready(function() {
 
     function refreshTimelapseControlButton() {
         let $toggleTimelapseText = $('span#toggle_timelapse_text');
-        $.get('/raspi/timelapse_active', function(timelapseRunning) {
+        $.get(apiRoot + '/timelapse_active', function(timelapseRunning) {
             console.log(timelapseRunning);
             if (timelapseRunning === 'true') {
                 $toggleTimelapseText.text('Stop timelapse');
@@ -36,16 +37,10 @@ $( document ).ready(function() {
         })
     }
 
-    function refreshPreviewImg() {
-        $.get('/raspi/preview', function(url) {
-            $('#preview_still').attr('src', url)
-        })
-    }
-
     $timelapseControlButton.on('click', function() {
         let $toggleTimelapseLoading = $('span#toggle_timelapse_loading');
         $toggleTimelapseLoading.removeClass('d-none');
-        $.post('/raspi/toggle_timelapse', function() {
+        $.post(apiRoot + '/toggle_timelapse', function() {
             refreshTimelapseControlButton();
             $toggleTimelapseLoading.addClass('d-none');
         })
@@ -55,8 +50,10 @@ $( document ).ready(function() {
         if (!$refreshPreviewButton.hasClass('busy')) {
             $refreshPreviewButton.addClass('busy');
             $spinner.removeClass('d-none');
-            $.post('/raspi/update_preview', function() {
-                $.when( refreshPreviewImg() ).done(function() {
+            $.post(apiRoot + '/update_preview', function() {
+                let dateTime = Date.now();
+                let url = apiRoot + '/preview.jpg?' + dateTime;
+                $.when( $('#preview_still').attr('src', url) ).done(function() {
                     $spinner.addClass('d-none');
                     $refreshPreviewButton.removeClass('busy');
                 });
@@ -82,7 +79,7 @@ $( document ).ready(function() {
     }
 
     function refreshRaspberryPiStatus() {
-        $.get('/raspi/status', function(response) {
+        $.get(apiRoot + '/status', function(response) {
             let status = JSON.parse(response);
             let temp = status['coreTemperature'].split('°')[0];
             $('span#coreTemperature').text(status['coreTemperature']);
@@ -95,6 +92,5 @@ $( document ).ready(function() {
 
     refreshTimelapseControlButton();
     refreshRaspberryPiStatus();
-    refreshPreviewImg();
     window.setInterval(refreshRaspberryPiStatus, 10000);
 });
