@@ -1,10 +1,10 @@
-require_relative './ssh_connection'
+require 'net/ssh'
 require_relative './camera'
 
 # Raspberry Pi SSH interface
 class RaspberryPi
   def self.temp
-    temp = SSHConnection.exec!('temp').strip
+    temp = ssh_exec('temp', true).strip
     "#{temp}°C"
   end
 
@@ -13,11 +13,11 @@ class RaspberryPi
   end
 
   def self.mem
-    SSHConnection.exec!('mem').strip
+    ssh_exec('mem', true).strip
   end
 
   def self.uptime
-    uptime = SSHConnection.exec!("echo $(awk '{print $1}' /proc/uptime)").to_i
+    uptime = ssh_exec("echo $(awk '{print $1}' /proc/uptime)", true).to_i
     duration = Time.at(uptime).utc
     hours = duration.strftime('%H').to_i
     minutes = duration.strftime('%M').to_i
@@ -29,35 +29,35 @@ class RaspberryPi
   end
 
   def self.stream_active?
-    SSHConnection.exec!('stream active').strip == 'true'
+    ssh_exec('stream active', true).strip == 'true'
   end
 
   def self.start_stream
-    SSHConnection.exec('sudo nohup stream start </dev/null &')
+    ssh_exec('sudo nohup stream start </dev/null &')
   end
 
   def self.stop_stream
-    SSHConnection.exec('sudo nohup stream stop </dev/null &')
+    ssh_exec('sudo nohup stream stop </dev/null &')
   end
 
   def self.timelapse_active?
-    SSHConnection.exec!('timelapse active').strip == 'true'
+    ssh_exec('timelapse active', true).strip == 'true'
   end
 
   def self.start_timelapse
-    SSHConnection.exec('sudo nohup timelapse start </dev/null &')
+    ssh_exec('sudo nohup timelapse start </dev/null &')
   end
 
   def self.stop_timelapse
-    SSHConnection.exec('sudo nohup timelapse stop </dev/null &')
+    ssh_exec('sudo nohup timelapse stop </dev/null &')
   end
 
   def self.update_preview
-    SSHConnection.exec('sudo nohup /usr/local/bin/update_preview </dev/null &')
+    ssh_exec('sudo nohup /usr/local/bin/update_preview </dev/null &')
   end
 
   def self.reboot
-    SSHConnection.exec('sudo reboot')
+    ssh_exec('sudo reboot')
   end
 
   def self.status
@@ -68,4 +68,25 @@ class RaspberryPi
       uptime: uptime
     }
   end
+
+  # private
+
+  def self.credentials
+    @credentials ||= {
+      host: ENV['RASPI_HOST'],
+      port: ENV['RASPI_PORT'],
+      user: ENV['RASPI_USER'],
+      password: ENV['RASPI_PASSWORD']
+    }
+  end
+
+  def self.ssh_exec(command, wait = false)
+    Net::SSH.start(
+      credentials[:host],
+      credentials[:user],
+      port: credentials[:port], password: credentials[:password]
+    ) { |ssh| wait ? ssh.exec!(command) : ssh.exec(command) }
+  end
+
+  private_class_method :credentials, :ssh_exec
 end

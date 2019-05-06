@@ -5,8 +5,8 @@ require 'thin'
 require 'rack/ssl-enforcer'
 require 'logger'
 require 'json'
-require_relative './lib/weather'
 require_relative './lib/raspberry_pi'
+require_relative './lib/weather'
 
 # App
 class App < Sinatra::Base
@@ -54,8 +54,12 @@ class App < Sinatra::Base
     RaspberryPi.status.to_json
   end
 
-  get '/raspi/timelapse_running' do
+  get '/raspi/timelapse_active' do
     RaspberryPi.timelapse_active?.to_s
+  end
+
+  post '/raspi/reboot' do
+    RaspberryPi.reboot
   end
 
   post '/raspi/toggle_timelapse' do
@@ -64,10 +68,6 @@ class App < Sinatra::Base
 
   post '/raspi/update_preview' do
     RaspberryPi.update_preview unless RaspberryPi.timelapse_active?
-  end
-
-  post '/raspi/reboot' do
-    RaspberryPi.reboot
   end
 
   post '/authenticate' do

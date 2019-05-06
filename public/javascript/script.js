@@ -26,7 +26,8 @@ $( document ).ready(function() {
 
     function refreshTimelapseControlButton() {
         let $toggleTimelapseText = $('span#toggle_timelapse_text');
-        $.get('/raspi/timelapse_running', function(timelapseRunning) {
+        $.get('/raspi/timelapse_active', function(timelapseRunning) {
+            console.log(timelapseRunning);
             if (timelapseRunning === 'true') {
                 $toggleTimelapseText.text('Stop timelapse');
             } else {
@@ -50,7 +51,7 @@ $( document ).ready(function() {
             $spinner.removeClass('d-none');
             $.post('/raspi/update_preview', function() {
                 let date = new Date();
-                $.when( $("#preview_still").attr("src", 'https://s3.eu-west-2.amazonaws.com/hogcam-photos/preview.jpg' + date.getTime()) ).done(function() {
+                $.when( $("#preview_still").attr("src", '/https://s3.eu-west-2.amazonaws.com/hogcam-photos/preview.jpg?' + date.getTime()) ).done(function() {
                     $spinner.addClass('d-none');
                     $refreshPreviewButton.removeClass('busy');
                 });

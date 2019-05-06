@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d09855e1-551d-41bf-a36b-27778cf4ff3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/ssh_connection.rb" afterDir="false" />
+    <list default="true" id="d09855e1-551d-41bf-a36b-27778cf4ff3d" name="Default Changelist" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/camera.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/camera.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/raspberry_pi.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/raspberry_pi.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ssh_connection.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascript/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascript/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,20 +22,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/raspberry_pi.rb">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="273">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+              <folding>
+                <element signature="e#217#518#0" />
+                <element signature="e#530#691#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/ssh_connection.rb">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascript/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="108">
+              <caret line="80" column="48" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/raspberry_pi.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4">
+              <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -50,6 +66,9 @@
       <find>creds</find>
       <find>ssh_exec!</find>
       <find>running_timelapse?</find>
+      <find>apiURL +</find>
+      <find>preview</find>
+      <find>, false</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -91,12 +110,11 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/raspberry_pi.rb" />
+        <option value="$PROJECT_DIR$/lib/camera.rb" />
+        <option value="$PROJECT_DIR$/views/home.erb" />
+        <option value="$PROJECT_DIR$/lib/raspberry_pi.rb" />
         <option value="$PROJECT_DIR$/public/javascript/script.js" />
         <option value="$PROJECT_DIR$/app.rb" />
-        <option value="$PROJECT_DIR$/views/home.erb" />
-        <option value="$PROJECT_DIR$/lib/camera.rb" />
-        <option value="$PROJECT_DIR$/lib/ssh_connection.rb" />
-        <option value="$PROJECT_DIR$/lib/raspberry_pi.rb" />
       </list>
     </option>
   </component>
@@ -107,12 +125,14 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -120,20 +140,11 @@
               <item name="hogcam" type="b2602c69:ProjectViewProjectNode" />
               <item name="hogcam" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="hogcam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hogcam" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hogcam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hogcam" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,7 +233,15 @@
       <workItem from="1556920107702" duration="384000" />
       <workItem from="1556974214390" duration="9079000" />
       <workItem from="1556995162487" duration="1211000" />
-      <workItem from="1556996486610" duration="6007000" />
+      <workItem from="1556996486610" duration="4990000" />
+      <workItem from="1557141878462" duration="785000" />
+    </task>
+    <task id="LOCAL-00048" summary="commit">
+      <created>1556468672143</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1556468672143</updated>
     </task>
     <task id="LOCAL-00049" summary="commit">
       <created>1556469780186</created>
@@ -560,18 +579,11 @@
       <option name="project" value="LOCAL" />
       <updated>1556983278068</updated>
     </task>
-    <task id="LOCAL-00097" summary="commit">
-      <created>1557138889547</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1557138889548</updated>
-    </task>
-    <option name="localTasksCounter" value="98" />
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95836000" />
+    <option name="totallyTimeSpent" value="95606000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -591,7 +603,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32923833" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.527027" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.527027" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -618,6 +630,46 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="• initial commit" />
     <MESSAGE value="• second commit" />
@@ -626,11 +678,10 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/hogcam@app.rcov" NAME="app Coverage Results" MODIFIED="1556628859248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="hogcam" />
-    <SUITE FILE_PATH="coverage/hogcam@raspberry_pi.rcov" NAME="raspberry_pi Coverage Results" MODIFIED="1556995402491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="hogcam" />
     <SUITE FILE_PATH="coverage/hogcam@Unnamed.rcov" NAME="rackup Coverage Results" MODIFIED="1556629012586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="hogcam" />
-    <SUITE FILE_PATH="coverage/hogcam@hogcam.rcov" NAME="hogcam Coverage Results" MODIFIED="1557139834927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="hogcam" />
+    <SUITE FILE_PATH="coverage/hogcam@hogcam.rcov" NAME="hogcam Coverage Results" MODIFIED="1557143250687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="hogcam" />
     <SUITE FILE_PATH="coverage/hogcam@aws_s3.rcov" NAME="aws_s3 Coverage Results" MODIFIED="1556833209194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="hogcam" />
-    <SUITE FILE_PATH="coverage/hogcam@shotgun.rcov" NAME="hogcam Coverage Results" MODIFIED="1556994818737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="hogcam" />
+    <SUITE FILE_PATH="coverage/hogcam@shotgun.rcov" NAME="shotgun Coverage Results" MODIFIED="1556920309820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="hogcam" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/views/settings.erb" />
@@ -692,13 +743,6 @@
     <entry file="file://$PROJECT_DIR$/public/scss/custom.scss" />
     <entry file="file://$PROJECT_DIR$/lib/aws_s3.rb" />
     <entry file="file://$PROJECT_DIR$/public/javascript/.env" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/ssh_credentials.rb" />
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
@@ -714,56 +758,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascript/script.js">
+    <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-696">
-          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        <state relative-caret-position="210">
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.rb">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="e#255#556#0" />
-            <element signature="e#568#729#0" />
-          </folding>
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/home.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="42" column="48" lean-forward="true" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="3570">
+          <caret line="102" column="99" selection-start-line="102" selection-start-column="99" selection-end-line="102" selection-end-column="99" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/camera.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/raspberry_pi.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="4">
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ssh_connection.rb">
+    <entry file="file://$PROJECT_DIR$/public/javascript/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="108">
+          <caret line="80" column="48" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#217#518#0" />
+            <element signature="e#530#691#0" />
+          </folding>
         </state>
       </provider>
     </entry>
