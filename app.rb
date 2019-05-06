@@ -5,6 +5,7 @@ require 'thin'
 require 'rack/ssl-enforcer'
 require 'logger'
 require 'json'
+require_relative './lib/aws'
 require_relative './lib/raspberry_pi'
 require_relative './lib/weather'
 
@@ -56,6 +57,10 @@ class App < Sinatra::Base
 
   get '/raspi/timelapse_active' do
     RaspberryPi.timelapse_active?.to_s
+  end
+
+  get '/raspi/preview' do
+    AWS.preview_url
   end
 
   post '/raspi/reboot' do

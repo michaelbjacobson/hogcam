@@ -36,6 +36,12 @@ $( document ).ready(function() {
         })
     }
 
+    function refreshPreviewImg() {
+        $.get('/raspi/preview', function(url) {
+            $('#preview_still').attr('src', url)
+        })
+    }
+
     $timelapseControlButton.on('click', function() {
         let $toggleTimelapseLoading = $('span#toggle_timelapse_loading');
         $toggleTimelapseLoading.removeClass('d-none');
@@ -50,8 +56,7 @@ $( document ).ready(function() {
             $refreshPreviewButton.addClass('busy');
             $spinner.removeClass('d-none');
             $.post('/raspi/update_preview', function() {
-                let date = new Date();
-                $.when( $("#preview_still").attr("src", '/https://s3.eu-west-2.amazonaws.com/hogcam-photos/preview.jpg?' + date.getTime()) ).done(function() {
+                $.when( refreshPreviewImg() ).done(function() {
                     $spinner.addClass('d-none');
                     $refreshPreviewButton.removeClass('busy');
                 });
@@ -90,5 +95,6 @@ $( document ).ready(function() {
 
     refreshTimelapseControlButton();
     refreshRaspberryPiStatus();
+    refreshPreviewImg();
     window.setInterval(refreshRaspberryPiStatus, 10000);
 });

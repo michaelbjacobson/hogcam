@@ -33,11 +33,11 @@ class RaspberryPi
   end
 
   def self.start_stream
-    ssh_exec('sudo nohup stream start </dev/null &')
+    ssh_exec('nohup stream start </dev/null &')
   end
 
   def self.stop_stream
-    ssh_exec('sudo nohup stream stop </dev/null &')
+    ssh_exec('nohup stream stop </dev/null &')
   end
 
   def self.timelapse_active?
@@ -45,15 +45,15 @@ class RaspberryPi
   end
 
   def self.start_timelapse
-    ssh_exec('sudo nohup timelapse start </dev/null &')
+    ssh_exec('nohup timelapse start </dev/null &')
   end
 
   def self.stop_timelapse
-    ssh_exec('sudo nohup timelapse stop </dev/null &')
+    ssh_exec('timelapse stop', true)
   end
 
   def self.update_preview
-    ssh_exec('sudo nohup /usr/local/bin/update_preview </dev/null &')
+    ssh_exec('update_preview', true)
   end
 
   def self.reboot
