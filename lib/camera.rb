@@ -1,9 +1,9 @@
+require 'net/ssh'
+
 # Camera interface
 class Camera
   def self.status
-    return 'OK' if supported && detected
-
-    'Offline'
+    supported && detected ? 'OK' : 'Offline'
   end
 
   # private
@@ -17,8 +17,25 @@ class Camera
   end
 
   def self.diagnostics
-    `vcgencmd get_camera`.split
+    ssh_exec('vcgencmd get_camera', true).split
   end
 
-  private_class_method :diagnostics, :supported, :detected
+  def self.credentials
+    @credentials ||= {
+      host: ENV['RASPI_HOST'],
+      port: ENV['RASPI_PORT'],
+      user: ENV['RASPI_USER'],
+      password: ENV['RASPI_PASSWORD']
+    }
+  end
+
+  def self.ssh_exec(command, wait)
+    Net::SSH.start(
+      credentials[:host],
+      credentials[:user],
+      port: credentials[:port], password: credentials[:password]
+    ) { |ssh| wait ? ssh.exec!(command) : ssh.exec(command) }
+  end
+
+  private_class_method :credentials, :ssh_exec, :diagnostics, :supported, :detected
 end

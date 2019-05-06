@@ -1,11 +1,10 @@
-require 'json'
 require 'net/ssh'
 require_relative './camera'
 
-# Raspberry Pi interface
+# Raspberry Pi SSH interface
 class RaspberryPi
   def self.temp
-    temp = `/usr/local/bin/temp`.strip
+    temp = ssh_exec('temp', true).strip
     "#{temp}°C"
   end
 
@@ -14,19 +13,11 @@ class RaspberryPi
   end
 
   def self.mem
-    `/usr/local/bin/mem`.strip
-  end
-
-  def self.running_timelapse?
-    `/usr/local/bin/timelapse_running`.strip == 'true'
-  end
-
-  def self.running_stream?
-    `/usr/local/bin/stream_running`.strip == 'true'
+    ssh_exec('mem', true).strip
   end
 
   def self.uptime
-    uptime = `echo $(awk '{print $1}' /proc/uptime)`.to_i
+    uptime = ssh_exec("echo $(awk '{print $1}' /proc/uptime)", true).to_i
     duration = Time.at(uptime).utc
     hours = duration.strftime('%H').to_i
     minutes = duration.strftime('%M').to_i
@@ -37,50 +28,65 @@ class RaspberryPi
     "#{hours_str}, #{minutes_str}"
   end
 
-  def self.capture_still
-    system('/usr/local/bin/preview')
-  end
-
-  def self.start_timelapse
-    system('/usr/local/bin/start_timelapse')
-  end
-
-  def self.stop_timelapse
-    system('/usr/local/bin/stop_timelapse')
+  def self.stream_active?
+    ssh_exec('stream active', true).strip == 'true'
   end
 
   def self.start_stream
-    system('/usr/local/bin/start_stream')
+    ssh_exec('sudo nohup stream start </dev/null &', false)
   end
 
   def self.stop_stream
-    system('/usr/local/bin/stop_stream')
+    ssh_exec('sudo nohup stream stop </dev/null &', false)
+  end
+
+  def self.timelapse_active?
+    ssh_exec('timelapse active', true).strip == 'true'
+  end
+
+  def self.start_timelapse
+    ssh_exec('sudo nohup timelapse start </dev/null &', false)
+  end
+
+  def self.stop_timelapse
+    ssh_exec('sudo nohup timelapse stop </dev/null &', false)
+  end
+
+  def self.update_preview
+    ssh_exec('sudo nohup /usr/local/bin/update_preview </dev/null &', false)
   end
 
   def self.reboot
-    system('sudo reboot')
+    ssh_exec('sudo reboot', false)
   end
 
-  def self.to_json
-    status = {
+  def self.status
+    {
       coreTemperature: temp,
       availableStorage: mem,
       cameraStatus: camera_status,
       uptime: uptime
     }
-    status.to_json
   end
 
-  def ssh_exec(str)
-    Net::SSH.start("host", "user", :password => "password") do |ssh|
-      result = ssh.exec!("ls -l")
-      puts result
-    end
-  end
+  # private
 
-  def ssh_credentials
-    {
-        
+  def self.credentials
+    @credentials ||= {
+      host: ENV['RASPI_HOST'],
+      port: ENV['RASPI_PORT'],
+      user: ENV['RASPI_USER'],
+      password: ENV['RASPI_PASSWORD']
     }
   end
+
+  def self.ssh_exec(command, wait)
+    Net::SSH.start(
+      credentials[:host],
+      credentials[:user],
+      port: credentials[:port], password: credentials[:password]
+    ) { |ssh| wait ? ssh.exec!(command) : ssh.exec(command) }
+  end
+
+  private_class_method :credentials, :ssh_exec
 end
