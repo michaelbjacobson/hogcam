@@ -27,8 +27,7 @@ $( document ).ready(function() {
 
     function refreshTimelapseControlButton() {
         let $toggleTimelapseText = $('span#toggle_timelapse_text');
-        $.get(apiRoot + '/timelapse_active', function(timelapseRunning) {
-            console.log(timelapseRunning);
+        $.get(apiRoot + '/timelapse/active', function(timelapseRunning) {
             if (timelapseRunning === 'true') {
                 $toggleTimelapseText.text('Stop timelapse');
             } else {
@@ -40,7 +39,7 @@ $( document ).ready(function() {
     $timelapseControlButton.on('click', function() {
         let $toggleTimelapseLoading = $('span#toggle_timelapse_loading');
         $toggleTimelapseLoading.removeClass('d-none');
-        $.post(apiRoot + '/toggle_timelapse', function() {
+        $.post(apiRoot + '/timelapse/toggle', function() {
             refreshTimelapseControlButton();
             $toggleTimelapseLoading.addClass('d-none');
         })
