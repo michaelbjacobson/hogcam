@@ -4,7 +4,6 @@ $( document ).ready(function() {
     let $timelapseControlButton = $('button#toggle_timelapse');
     let $rebootButton = $('button#reboot');
     let $refreshPreviewButton = $('button#refresh_preview');
-    let timeoutId = 0;
 
     $rebootButton.on('click', function() {
         $.post(apiRoot + '/reboot')
@@ -37,26 +36,13 @@ $( document ).ready(function() {
         })
     }
 
-    // $timelapseControlButton.on('click', function() {
-    //     let $toggleTimelapseLoading = $('span#toggle_timelapse_loading');
-    //     $toggleTimelapseLoading.removeClass('d-none');
-    //     $.post(apiRoot + '/timelapse/toggle', function() {
-    //         refreshTimelapseControlButton();
-    //         $toggleTimelapseLoading.addClass('d-none');
-    //     })
-    // });
-
-    $timelapseControlButton.on('mousedown', function() {
-        timeoutId = setTimeout(function() {
-            let $toggleTimelapseLoading = $('span#toggle_timelapse_loading');
-            $toggleTimelapseLoading.removeClass('d-none');
-            $.post(apiRoot + '/timelapse/toggle', function() {
-                refreshTimelapseControlButton();
-                $toggleTimelapseLoading.addClass('d-none');
-            })
-        }, 1000);
-    }).on('mouseup mouseleave', function() {
-        clearTimeout(timeoutId);
+    $timelapseControlButton.on('click', function() {
+        let $toggleTimelapseLoading = $('span#toggle_timelapse_loading');
+        $toggleTimelapseLoading.removeClass('d-none');
+        $.post(apiRoot + '/timelapse/toggle', function() {
+            refreshTimelapseControlButton();
+            $toggleTimelapseLoading.addClass('d-none');
+        })
     });
 
     $refreshPreviewButton.on('click', function() {
