@@ -80,7 +80,7 @@ $( document ).ready(function() {
     function refreshSignalBars(sig) {
         let signal = parseInt(sig);
         let bars = [1, 2, 3, 4, 5].map(function(int) {
-            let weight = (int <= signal) ? 'fal' : 'fas';
+            let weight = (int <= signal) ? 'fas' : 'fal';
             return `<i class="${weight} fa-circle"></i>`
         });
         $('span#signalStrength').html(bars.join(''));
