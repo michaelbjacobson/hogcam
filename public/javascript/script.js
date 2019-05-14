@@ -80,7 +80,6 @@ $( document ).ready(function() {
     function refreshRaspberryPiStatus() {
         $.get(apiRoot + '/status', function(response) {
             let status = JSON.parse(response);
-            console.log(status);
             let temp = status['coreTemperature'].split('°')[0];
             $('span#coreTemperature').text(status['coreTemperature']);
             $('span#availbleStorage').text(status['availableStorage']);
