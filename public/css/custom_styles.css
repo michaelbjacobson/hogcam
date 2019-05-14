@@ -15,3 +15,7 @@ span#logout:hover {
 i#eye:hover {
     cursor: pointer;
 }
+
+i.fa-circle {
+    padding-right: 2px;
+}

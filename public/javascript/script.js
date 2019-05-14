@@ -77,6 +77,15 @@ $( document ).ready(function() {
         }
     }
 
+    function refreshSignalBars(sig) {
+        let signal = parseInt(sig);
+        let bars = [1, 2, 3, 4, 5].map(function(int) {
+            let weight = (int <= signal) ? 'fal' : 'fas';
+            return `<i class="${weight} fa-circle"></i>`
+        });
+        $('span#signalStrength').html(bars.join(''));
+    }
+
     function refreshRaspberryPiStatus() {
         $.get(apiRoot + '/status', function(response) {
             let status = JSON.parse(response);
@@ -84,8 +93,8 @@ $( document ).ready(function() {
             $('span#coreTemperature').text(status['coreTemperature']);
             $('span#availbleStorage').text(status['availableStorage']);
             $('span#cameraStatus').text(status['cameraStatus']);
-            $('span#signalStrength').text( `${status['signalStrength']} dBm` );
             $('span#uptime').text(status['uptime']);
+            refreshSignalBars(status['signalStrength']);
             refreshTempWarning(temp);
         })
     }
