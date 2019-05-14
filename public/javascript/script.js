@@ -84,6 +84,7 @@ $( document ).ready(function() {
             $('span#coreTemperature').text(status['coreTemperature']);
             $('span#availbleStorage').text(status['availableStorage']);
             $('span#cameraStatus').text(status['cameraStatus']);
+            $('span#signalStrength').text( `${status['signalStrength']} dBm` );
             $('span#uptime').text(status['uptime']);
             refreshTempWarning(temp);
         })
