@@ -35,7 +35,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/custom_styles.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="439">
@@ -44,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/home.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="59" column="54" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
+            <state relative-caret-position="244">
+              <caret line="61" column="62" selection-start-line="61" selection-start-column="62" selection-end-line="61" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -115,9 +115,9 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/Rakefile" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/views/home.erb" />
         <option value="$PROJECT_DIR$/public/javascript/script.js" />
         <option value="$PROJECT_DIR$/public/css/custom_styles.css" />
+        <option value="$PROJECT_DIR$/views/home.erb" />
       </list>
     </option>
   </component>
@@ -278,21 +278,7 @@
       <workItem from="1557758404214" duration="1444000" />
       <workItem from="1557760020883" duration="16000" />
       <workItem from="1557851478045" duration="1655000" />
-      <workItem from="1557859298832" duration="2272000" />
-    </task>
-    <task id="LOCAL-00064" summary="commit">
-      <created>1556488268537</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1556488268537</updated>
-    </task>
-    <task id="LOCAL-00065" summary="commit">
-      <created>1556488388735</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1556488388735</updated>
+      <workItem from="1557859298832" duration="2763000" />
     </task>
     <task id="LOCAL-00066" summary="commit">
       <created>1556488535645</created>
@@ -623,11 +609,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557864013391</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="commit">
+      <created>1557864773121</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1557864773121</updated>
+    </task>
+    <task id="LOCAL-00114" summary="commit">
+      <created>1557864843581</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1557864843581</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115045000" />
+    <option name="totallyTimeSpent" value="115536000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -748,7 +748,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/hogcam@app.rcov" NAME="app Coverage Results" MODIFIED="1556628859248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="hogcam" />
     <SUITE FILE_PATH="coverage/hogcam@Unnamed.rcov" NAME="rackup Coverage Results" MODIFIED="1556629012586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="hogcam" />
-    <SUITE FILE_PATH="coverage/hogcam@hogcam.rcov" NAME="hogcam Coverage Results" MODIFIED="1557863832929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="hogcam" />
+    <SUITE FILE_PATH="coverage/hogcam@hogcam.rcov" NAME="hogcam Coverage Results" MODIFIED="1557957337621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="hogcam" />
     <SUITE FILE_PATH="coverage/hogcam@aws_s3.rcov" NAME="aws_s3 Coverage Results" MODIFIED="1556833209194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="hogcam" />
     <SUITE FILE_PATH="coverage/hogcam@shotgun.rcov" NAME="shotgun Coverage Results" MODIFIED="1556920309820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="hogcam" />
   </component>
@@ -837,25 +837,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding>
-            <element signature="e#217#518#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/all.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/home.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="59" column="54" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascript/script.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -868,6 +851,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
           <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="e#217#518#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/home.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="61" column="62" selection-start-line="61" selection-start-column="62" selection-end-line="61" selection-end-column="62" />
         </state>
       </provider>
     </entry>
