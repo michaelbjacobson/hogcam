@@ -68,13 +68,17 @@ $( document ).ready(function() {
             .addClass('d-none')
             .removeClass('badge-danger badge-warning');
 
-        if (temp > 69 && temp <= 79) {
-            $alertBadge.removeClass('d-none');
+        if (temp > 74) {
             $alertBadge.addClass('badge-warning');
-        } else if (temp > 79) {
-            $alertBadge.removeClass('d-none');
-            $alertBadge.addClass('badge-danger');
         }
+
+        // if (temp > 69 && temp <= 79) {
+        //     $alertBadge.removeClass('d-none');
+        //     $alertBadge.addClass('badge-warning');
+        // } else if (temp > 79) {
+        //     $alertBadge.removeClass('d-none');
+        //     $alertBadge.addClass('badge-danger');
+        // }
     }
 
     function refreshSignalBars(sig) {
