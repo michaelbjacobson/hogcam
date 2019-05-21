@@ -6,6 +6,7 @@ require 'rack/ssl-enforcer'
 require 'logger'
 require 'json'
 require_relative './lib/weather'
+require_relative './lib/aws'
 
 # App
 class App < Sinatra::Base
@@ -46,6 +47,7 @@ class App < Sinatra::Base
   end
 
   get '/archive' do
+    @movies = AwsS3.movies
     erb :archive
   end
 

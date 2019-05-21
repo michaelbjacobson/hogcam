@@ -41,7 +41,13 @@
   </div>
 </nav>
 
-<div class="p-2 mx-auto" style="max-width: 1024px !important;"></div>
+<div class="p-2 mx-auto" style="max-width: 1024px !important;">
+
+  <% @movies.each do |movie| %>
+    <a href="<%= movie.url %>" class="w-100 mx-auto my-2 btn btn-dark btn-lg" role="button"><%= "#{movie.date} | #{movie.time}" %></a>
+  <% end %>
+
+</div>
 
 </body>
 </html>
