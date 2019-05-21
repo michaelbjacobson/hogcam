@@ -37,8 +37,16 @@ class App < Sinatra::Base
     redirect '/login' unless authenticated?
   end
 
+  before '/archive' do
+    redirect '/login' unless authenticated?
+  end
+
   get '/' do
     erb :home
+  end
+
+  get '/archive' do
+    erb :archive
   end
 
   get '/login' do
