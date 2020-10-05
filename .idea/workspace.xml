@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d09855e1-551d-41bf-a36b-27778cf4ff3d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/hogcam.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hogcam.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.erb" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,55 +14,6 @@
   <component name="ElmWorkspace">
     <elmProjects />
     <settings elmCompilerPath="" elmFormatPath="" elmTestPath="" isElmFormatOnSaveEnabled="false" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1715">
-              <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/aws.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/archive.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1610">
-              <caret line="46" column="56" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/javascript/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="73" selection-start-line="73" selection-end-line="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/home.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3955">
-              <caret line="113" column="2" selection-start-line="113" selection-start-column="2" selection-end-line="113" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -90,45 +42,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/views/index.erb" />
-        <option value="$PROJECT_DIR$/public/styles.css" />
-        <option value="$PROJECT_DIR$/views/settings.erb" />
-        <option value="$PROJECT_DIR$/public/CSS/custom_styles.css" />
-        <option value="$PROJECT_DIR$/lib/raspi.rb" />
-        <option value="$PROJECT_DIR$/public/JavaScript/script.js" />
-        <option value="$PROJECT_DIR$/config/unicorn.rb" />
-        <option value="$PROJECT_DIR$/config/nginx.conf" />
-        <option value="$PROJECT_DIR$/log/app.log" />
-        <option value="$PROJECT_DIR$/log/access.log" />
-        <option value="$PROJECT_DIR$/lib/mock_pi.rb" />
-        <option value="$PROJECT_DIR$/config.rb" />
-        <option value="$PROJECT_DIR$/config.ru" />
-        <option value="$PROJECT_DIR$/public/javascript/login.js" />
-        <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/dependencies.rb" />
-        <option value="$PROJECT_DIR$/views/login.erb" />
-        <option value="$PROJECT_DIR$/lib/aws_s3.rb" />
-        <option value="$PROJECT_DIR$/raspberry_pi.rb" />
-        <option value="$PROJECT_DIR$/lib/camera.rb" />
-        <option value="$PROJECT_DIR$/lib/raspberry_pi.rb" />
-        <option value="$PROJECT_DIR$/archive.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/lib/weather.rb" />
-        <option value="$PROJECT_DIR$/Rakefile" />
-        <option value="$PROJECT_DIR$/public/css/custom_styles.css" />
-        <option value="$PROJECT_DIR$/views/home.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/lib/aws.rb" />
-        <option value="$PROJECT_DIR$/app.rb" />
-        <option value="$PROJECT_DIR$/views/archive.erb" />
-        <option value="$PROJECT_DIR$/public/javascript/script.js" />
-      </list>
-    </option>
-  </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
@@ -139,58 +52,31 @@
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectId" id="1iSusTpsGPqX9lzgbr9Q42MYk5M" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="1" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="hogcam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hogcam" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hogcam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hogcam" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hogcam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hogcam" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hogcam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hogcam" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -204,18 +90,6 @@
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="hogcam" type="CommandRunConfigurationType" factoryName="Gem Command">
@@ -239,7 +113,8 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="false" RAILS_SPRING_PRE_LOADER_OPTION="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -286,6 +161,7 @@
       <workItem from="1558475855088" duration="424000" />
       <workItem from="1558534086788" duration="11000" />
       <workItem from="1558534111701" duration="1000" />
+      <workItem from="1601913522142" duration="1138000" />
     </task>
     <task id="LOCAL-00070" summary="commit">
       <created>1556489890077</created>
@@ -633,9 +509,6 @@
     <option name="localTasksCounter" value="119" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119192000" />
-  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -645,60 +518,8 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="797" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.33476394" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32923833" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.527027" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3992629" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32923833" />
-      <window_info anchor="bottom" id="Elm Compiler" order="7" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.57125306" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32923833" />
-      <window_info anchor="bottom" id="Messages" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Elm" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28755364" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32923833" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.527027" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3992629" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32923833" />
-      <window_info anchor="bottom" id="Elm Compiler" order="7" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.57125306" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32923833" />
-      <window_info anchor="bottom" id="Messages" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Elm" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
@@ -710,22 +531,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -744,6 +550,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="• initial commit" />
@@ -752,140 +559,37 @@
     <MESSAGE value="commit" />
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/hogcam@app.rcov" NAME="app Coverage Results" MODIFIED="1556628859248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="hogcam" />
-    <SUITE FILE_PATH="coverage/hogcam@Unnamed.rcov" NAME="rackup Coverage Results" MODIFIED="1556629012586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="hogcam" />
-    <SUITE FILE_PATH="coverage/hogcam@hogcam.rcov" NAME="hogcam Coverage Results" MODIFIED="1558445350095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="hogcam" />
-    <SUITE FILE_PATH="coverage/hogcam@aws_s3.rcov" NAME="aws_s3 Coverage Results" MODIFIED="1556833209194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="hogcam" />
-    <SUITE FILE_PATH="coverage/hogcam@shotgun.rcov" NAME="shotgun Coverage Results" MODIFIED="1556920309820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="hogcam" />
+  <component name="WindowStateProjectService">
+    <state width="1398" height="401" key="GridCell.Tab.0.bottom" timestamp="1601917107270">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="401" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601917107270" />
+    <state width="1398" height="401" key="GridCell.Tab.0.center" timestamp="1601917107269">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="401" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601917107269" />
+    <state width="1398" height="401" key="GridCell.Tab.0.left" timestamp="1601917107268">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="401" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601917107268" />
+    <state width="1398" height="401" key="GridCell.Tab.0.right" timestamp="1601917107269">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="401" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601917107269" />
+    <state x="221" y="89" key="SettingsEditor" timestamp="1601917047881">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1601917047881" />
+    <state x="516" y="367" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601917191806">
+      <screen x="0" y="23" width="1440" height="800" />
+    </state>
+    <state x="516" y="367" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.800@0.23.1440.800" timestamp="1601917191806" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/settings.erb" />
-    <entry file="file://$PROJECT_DIR$/public/styles.css" />
-    <entry file="file://$PROJECT_DIR$/public/favicon.ico" />
-    <entry file="file://$PROJECT_DIR$/config/nginx.conf" />
-    <entry file="file://$PROJECT_DIR$/config/unicorn.rb" />
-    <entry file="file://$PROJECT_DIR$/public/apple-touch-icon.png" />
-    <entry file="file://$PROJECT_DIR$/logs/error.log" />
-    <entry file="file://$PROJECT_DIR$/logs/app.log" />
-    <entry file="file://$PROJECT_DIR$/logs/access.log" />
-    <entry file="file://$PROJECT_DIR$/lib/mock_pi.rb" />
-    <entry file="file://$PROJECT_DIR$/config.rb" />
-    <entry file="file://$PROJECT_DIR$/helpers.rb" />
-    <entry file="file://$PROJECT_DIR$/public/javascript/login.js" />
-    <entry file="file://$PROJECT_DIR$/config.ru">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="2" column="7" lean-forward="true" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="58" selection-start-column="58" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dependencies.rb" />
-    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.min.css" />
-    <entry file="file://$PROJECT_DIR$/public/javascript/bootstrap.bundle.js" />
-    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css" />
-    <entry file="file://$PROJECT_DIR$/public/scss/custom.scss" />
-    <entry file="file://$PROJECT_DIR$/lib/aws_s3.rb" />
-    <entry file="file://$PROJECT_DIR$/public/javascript/.env" />
-    <entry file="file://$PROJECT_DIR$/lib/ssh_credentials.rb" />
-    <entry file="file://$PROJECT_DIR$/views/login.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/camera.rb" />
-    <entry file="file://$PROJECT_DIR$/lib/raspberry_pi.rb" />
-    <entry file="file://$PROJECT_DIR$/archive.json" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.json" />
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile" />
-    <entry file="file://$PROJECT_DIR$/public/css/all.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/custom_styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/weather.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="2" column="62" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1715">
-          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/aws.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/archive.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1610">
-          <caret line="46" column="56" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/home.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3955">
-          <caret line="113" column="2" selection-start-line="113" selection-start-column="2" selection-end-line="113" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascript/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/hogcam@hogcam.rcov" NAME="hogcam Coverage Results" MODIFIED="1558445350095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="hogcam" />
+    <SUITE FILE_PATH="coverage/hogcam@shotgun.rcov" NAME="shotgun Coverage Results" MODIFIED="1556920309820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="hogcam" />
+    <SUITE FILE_PATH="coverage/hogcam@app.rcov" NAME="app Coverage Results" MODIFIED="1556628859248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="hogcam" />
+    <SUITE FILE_PATH="coverage/hogcam@aws_s3.rcov" NAME="aws_s3 Coverage Results" MODIFIED="1556833209194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="hogcam" />
+    <SUITE FILE_PATH="coverage/hogcam@Unnamed.rcov" NAME="rackup Coverage Results" MODIFIED="1556629012586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="hogcam" />
   </component>
 </project>
